@@ -33,7 +33,7 @@ ${rundir}/railo-installer.run --mode unattended --railopass $railoPassword --deb
 
 service railo_ctl stop
 
-echo "Configuring Railo for ${$PRIVATE_NETWORK_IP} ..."
+echo "Configuring Railo for ${PRIVATE_NETWORK_IP} ..."
 
 # rm -rf /var/www/WEB-INF # nn?
 
