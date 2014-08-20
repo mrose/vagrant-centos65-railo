@@ -37,7 +37,7 @@ echo "Configuring Railo for ${$PRIVATE_NETWORK_IP} ..."
 
 # rm -rf /var/www/WEB-INF # nn?
 
-sed -e "s/localhost/$PRIVATE_NETWORK_IP/g" /vagrant/config/railo/server.xml > temp
+sed -e "s/localhost/$PRIVATE_NETWORK_IP/g" /vagrant/provision/railo/server.xml > temp
 mv temp "${rundir}/tomcat/conf/server.xml"
 service railo_ctl start
 echo "Restarting Apache ..."
