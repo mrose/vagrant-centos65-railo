@@ -43,3 +43,5 @@ service railo_ctl start
 echo "Restarting Apache ..."
 service httpd restart
 touch "${runfile}"
+
+echo "Install Railo Completed"
