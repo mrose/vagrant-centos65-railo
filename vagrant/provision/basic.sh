@@ -21,3 +21,5 @@ yum -y update
 echo "Installing nano, git, wget ..."
 yum -y install nano git wget
 touch "${runfile}" # on guest
+
+echo "Completed Install of nano, git, wget"
