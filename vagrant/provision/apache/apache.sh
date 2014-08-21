@@ -14,3 +14,5 @@ service httpd start
 chkconfig httpd on
 service httpd status
 touch "${runfile}"
+
+echo "Apache Install Completed"
